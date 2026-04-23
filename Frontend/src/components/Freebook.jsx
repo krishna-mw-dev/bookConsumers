@@ -28,8 +28,8 @@ function Freebook() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: Math.min(3, book.length),
+    slidesToScroll: Math.min(3, book.length),
     initialSlide: 0,
     responsive: [
       {
